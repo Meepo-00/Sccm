@@ -47,3 +47,6 @@ In several cases:
 
 ### Detection Method Correction
 Replaced MSI-based detection with file-based detection:
+Path: C:\Program Files\Dell\CommandUpdate
+File: dcu-cli.exe
+Rule: Exists
