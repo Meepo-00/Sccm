@@ -50,3 +50,21 @@ Replaced MSI-based detection with file-based detection:
 Path: C:\Program Files\Dell\CommandUpdate
 File: dcu-cli.exe
 Rule: Exists
+
+This ensured SCCM accurately detected DCU regardless of version changes or MSI GUID behavior.
+
+---
+
+## Outcome
+- Deployment stabilized across fresh and existing Windows 11 images
+- Previously failed devices reported as **Already Compliant**
+- Reinstall loops and false failures eliminated
+- Deployment confirmed production-ready
+
+---
+
+## Key Lessons
+- Detection logic is as critical as installation logic
+- MSI exit codes can be symptoms, not root causes
+- File-based detection is often more reliable for vendor tools
+- Endpoint compliance depends on verifiable state, not installer success alone
