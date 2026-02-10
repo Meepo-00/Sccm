@@ -63,6 +63,14 @@ This ensured SCCM accurately detected DCU regardless of version changes or MSI G
 
 ---
 
+## Security Impact
+- Vulnerability Remediation: Ensures Dell devices receive critical firmware and BIOS security patches automatically
+- Attack Surface Reduction: Outdated drivers are common exploit vectors; DCU automation reduces exposure window
+- Compliance: Supports organizational patch management requirements and reduces manual intervention
+- Endpoint Hardening: BIOS updates often include security features (Secure Boot, TPM updates, firmware protections)
+
+---
+
 ## Key Lessons
 - Detection logic is as critical as installation logic
 - MSI exit codes can be symptoms, not root causes
